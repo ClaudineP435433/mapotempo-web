@@ -408,8 +408,8 @@ he:
       visit:
         ref: הפניה
         ref_small: מס
-        take_over: משך הביקור
-        take_over_small: משך
+        duration: משך הביקור
+        duration_small: משך
         open1: חלון זמן 1 פתוח
         open1_small: לפתוח 1
         close1: חלון זמן 1 סגור
@@ -903,8 +903,8 @@ he:
       geocoding_level: רמת הגאוקודינג
       geocoding_level_desc: רמת הדיוק הגיע בעת המרת כתובת הרחוב של היעד לתוך קואורדינטות
         גיאוגרפיות, לידי ביטוי ברמות ידידותיות אנושיות.
-      take_over: משך הביקור
-      take_over_desc: משך הביקור
+      duration: משך הביקור
+      duration_desc: משך הביקור
       quantity: כמות
       quantity_desc: מספר יחידות להעברה.
       quantity1_1: כמות 1_1

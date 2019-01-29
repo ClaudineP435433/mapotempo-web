@@ -76,7 +76,7 @@
            visit_width[:ref] = 3 if @customer.enable_references && @customer.enable_multi_visits
            visit_width[:quantity] = 3 unless @customer.enable_orders
            visit_width[:tags] = 8 if @customer.enable_multi_visits
-           visit_width[:take_over] = 4
+           visit_width[:duration] = 4
            visit_width[:open1] = 2.5
            visit_width[:close1] = 2.5
            visit_width[:open2] = 2.5
@@ -97,7 +97,7 @@
               <div class="visit-subtitle" style="width: <%= visit_width[:tags] %>em;"><%= t 'activerecord.attributes.visit.tags' %></div>
             <% end %>
 
-            <div class="visit-subtitle" style="width: <%= visit_width[:take_over] %>em;"><%= t 'activerecord.attributes.visit.take_over_small' %></div>
+            <div class="visit-subtitle" style="width: <%= visit_width[:duration] %>em;"><%= t 'activerecord.attributes.visit.duration_small' %></div>
             <div class="visit-subtitle" style="width: <%= visit_width[:open1] %>em;"><%= t 'activerecord.attributes.visit.open1_small' %></div>
             <div class="visit-subtitle" style="width: <%= visit_width[:close1] %>em;"><%= t 'activerecord.attributes.visit.close1_small' %></div>
             <div class="visit-subtitle" style="width: <%= visit_width[:open2] %>em;"><%= t 'activerecord.attributes.visit.open2_small' %></div>

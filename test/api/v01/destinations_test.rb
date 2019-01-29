@@ -69,7 +69,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
             close1: '12:00',
             open2: '13:00',
             close2: '14:00',
-            take_over: nil,
+            duration: nil,
             route: '1',
             active: '1'
           },
@@ -80,7 +80,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
             close1: '18:00',
             open2: '20:00',
             close2: '21:00',
-            take_over: nil,
+            duration: nil,
             route: '1',
             active: '1'
           }])
@@ -165,7 +165,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
                 close1: '12:00',
                 open2: '14:00',
                 close2: '18:00',
-                take_over: nil,
+                duration: nil,
                 route: 'useless_because_of_zoning_ids',
                 active: '1'
               },
@@ -177,7 +177,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
                 open2: '20:00',
                 close2: '21:00',
                 priority: 0,
-                take_over: nil,
+                duration: nil,
                 route: 'useless_because_of_zoning_ids',
                 active: '1'
               }]
@@ -246,7 +246,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
               close1: '32:00',
               open2: '38:00',
               close2: '44:00',
-              take_over: nil,
+              duration: nil,
               route: 'useless_because_of_zoning_ids',
               active: '1'
             },
@@ -258,7 +258,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
               open2: '32:00',
               close2: '36:00',
               priority: -4,
-              take_over: nil,
+              duration: nil,
               route: 'useless_because_of_zoning_ids',
               active: '1'
             }]
@@ -315,7 +315,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
                 close1: '12:00',
                 open2: '14:00',
                 close2: '18:00',
-                take_over: nil,
+                duration: nil,
                 route: '1',
                 ref_vehicle: '003',
                 active: true
@@ -327,7 +327,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
                 close1: '18:00',
                 open2: '20:00',
                 close2: '21:00',
-                take_over: nil,
+                duration: nil,
                 route: '1',
                 ref_vehicle: '003',
                 active: true
@@ -378,7 +378,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
           close1: '12:00',
           open2: '14:00',
           close2: '18:00',
-          take_over: nil,
+          duration: nil,
           route: '1',
           ref_vehicle: '003',
           active: true
@@ -390,7 +390,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
           close1: '18:00',
           open2: '20:00',
           close2: '21:00',
-          take_over: nil,
+          duration: nil,
           route: '1',
           ref_vehicle: '003',
           active: true
@@ -432,7 +432,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
               close1: nil,
               open2: nil,
               close2: nil,
-              take_over: nil,
+              duration: nil,
               route: '1',
               active: '1'
             },{
@@ -442,7 +442,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
               close1: nil,
               open2: nil,
               close2: nil,
-              take_over: nil,
+              duration: nil,
               route: '1',
               active: '1'
             }]
@@ -487,7 +487,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
               close1: '12:00',
               open2: '13:00',
               close2: '14:00',
-              take_over: nil,
+              duration: nil,
               route: '1',
               active: '1'
             },
@@ -498,7 +498,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
               close1: '18:00',
               open2: '20:00',
               close2: '21:00',
-              take_over: nil,
+              duration: nil,
               route: '1',
               active: '1'
             }]
@@ -587,7 +587,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
               visits: [{
                 quantity1_1: 2,
                 ref: 'v1',
-                take_over: nil,
+                duration: nil,
                 route: '', # Should be imported in unplanned
                 active: '1'
               }]
@@ -676,7 +676,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
               close1: nil,
               open2: nil,
               close2: nil,
-              take_over: nil,
+              duration: nil,
               route: '1',
               active: '1'
             },{
@@ -686,7 +686,7 @@ class V01::DestinationsTest < ActiveSupport::TestCase
               close1: nil,
               open2: nil,
               close2: nil,
-              take_over: nil,
+              duration: nil,
               route: '1',
               active: '1'
             }]

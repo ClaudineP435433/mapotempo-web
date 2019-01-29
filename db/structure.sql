@@ -2,14 +2,15 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.6.7
--- Dumped by pg_dump version 9.6.7
+-- Dumped from database version 10.5
+-- Dumped by pg_dump version 10.5
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
 SET check_function_bodies = false;
 SET client_min_messages = warning;
 SET row_security = off;
@@ -41,8 +42,6 @@ CREATE EXTENSION IF NOT EXISTS hstore WITH SCHEMA public;
 
 COMMENT ON EXTENSION hstore IS 'data type for storing sets of (key, value) pairs';
 
-
-SET search_path = public, pg_catalog;
 
 SET default_tablespace = '';
 
@@ -1047,7 +1046,7 @@ CREATE TABLE public.visits (
     quantities public.hstore,
     open1 integer,
     close1 integer,
-    take_over integer,
+    duration integer,
     open2 integer,
     close2 integer,
     quantities_operations public.hstore,
@@ -2761,6 +2760,9 @@ INSERT INTO schema_migrations (version) VALUES ('20180628142222');
 
 INSERT INTO schema_migrations (version) VALUES ('20180629081835');
 
+INSERT INTO schema_migrations (version) VALUES ('20181220135439');
+
 INSERT INTO schema_migrations (version) VALUES ('20181227141833');
 
-INSERT INTO schema_migrations (version) VALUES ('20181220135439');
+INSERT INTO schema_migrations (version) VALUES ('20190129132239');
+

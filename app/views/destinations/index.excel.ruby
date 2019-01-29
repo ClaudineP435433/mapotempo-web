@@ -17,7 +17,7 @@ CSV.generate({col_sep: ';', row_sep: "\r\n"}) { |csv|
     I18n.t('destinations.import_file.tags'),
     I18n.t('destinations.import_file.without_visit'),
     I18n.t('destinations.import_file.ref_visit'),
-    I18n.t('destinations.import_file.take_over'),
+    I18n.t('destinations.import_file.duration'),
     I18n.t('destinations.import_file.open1'),
     I18n.t('destinations.import_file.close1'),
     I18n.t('destinations.import_file.open2'),
@@ -52,7 +52,7 @@ CSV.generate({col_sep: ';', row_sep: "\r\n"}) { |csv|
         csv << destination_columns + [
           '',
           visit.ref,
-          visit.take_over_absolute_time_with_seconds,
+          visit.duration_absolute_time_with_seconds,
           visit.open1_absolute_time,
           visit.close1_absolute_time,
           visit.open2_absolute_time,

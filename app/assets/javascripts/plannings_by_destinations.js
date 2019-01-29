@@ -56,7 +56,7 @@ var planningsShow = function(params) {
       } else {
         selectedStops[planningId] = {
           planningId: planningId,
-          take_over: null,
+          duration: null,
           quantities: quantities
         };
       }

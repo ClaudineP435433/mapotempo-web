@@ -222,7 +222,7 @@ class DestinationsController < ApplicationController
       visits_attributes: [
         :id,
         :ref,
-        :take_over,
+        :duration,
         :open1,
         :close1,
         :open2,

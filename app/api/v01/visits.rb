@@ -43,7 +43,7 @@ class V01::Visits < Grape::API
       end
 
       deliverable_unit_ids = current_customer.deliverable_units.map{ |du| du.id.to_s }
-      p.permit(:ref, :take_over, :open1, :close1, :open2, :close2, :priority, tag_ids: [], quantities: deliverable_unit_ids, quantities_operations: deliverable_unit_ids)
+      p.permit(:ref, :duration, :open1, :close1, :open2, :close2, :priority, tag_ids: [], quantities: deliverable_unit_ids, quantities_operations: deliverable_unit_ids)
     end
 
     ID_DESC = 'Id or the ref field value, then use "ref:[value]".'.freeze
@@ -97,7 +97,7 @@ class V01::Visits < Grape::API
               :tag_ids,
               :open1,
               :close1,
-              :take_over,
+              :duration,
               :open2,
               :close2,
               :priority)
@@ -111,7 +111,7 @@ class V01::Visits < Grape::API
 
           optional :open1, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
           optional :close1, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
-          optional :take_over, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
+          optional :duration, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
           optional :open2, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
           optional :close2, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
         end
@@ -136,7 +136,7 @@ class V01::Visits < Grape::API
               :tag_ids,
               :open1,
               :close1,
-              :take_over,
+              :duration,
               :open2,
               :close2)
 
@@ -149,7 +149,7 @@ class V01::Visits < Grape::API
 
           optional :open1, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
           optional :close1, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
-          optional :take_over, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
+          optional :duration, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
           optional :open2, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
           optional :close2, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
         end

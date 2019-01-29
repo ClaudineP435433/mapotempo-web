@@ -473,8 +473,8 @@ de:
       visit:
         ref: Referenz
         ref_small: Nr.
-        take_over: Verweildauer
-        take_over_small: Dauer
+        duration: Verweildauer
+        duration_small: Dauer
         open1: Zeitfenster 1 öffnen
         open1_small: Öffnen 1
         close1: Zeitfenster 1 schließen
@@ -495,8 +495,8 @@ de:
       visits:
         ref: Referenz
         ref_small: Nr.
-        take_over: Verweildauer
-        take_over_small: Dauer
+        duration: Verweildauer
+        duration_small: Dauer
         open1: Zeitfenster 1 öffnen
         open1_small: Öffnen 1
         close1: Zeitfenster 1 schließen
@@ -1025,8 +1025,8 @@ de:
       geocoding_accuracy_format: Gleitkommazahl zwischen 0 und 1
       geocoding_level: Geokodierungsebene
       geocoding_level_desc: Präzision, die bei der Umwandlung der Straßenadresse des Ziels in geografische Koordinaten erreicht wird, ausgedrückt durch für den Benutzer verständliche Ebenen.
-      take_over: Verweildauer
-      take_over_desc: Verweildauer
+      duration: Verweildauer
+      duration_desc: Verweildauer
       quantity: Menge
       quantity_desc: Anzahl der zu liefernden Einheiten.
       quantity_operation: Vorgang
@@ -2077,8 +2077,8 @@ de:
         quantities_operations_title: 'Befüllen/Leeren'
         quantities_operations_help: 'Nur auswählen, wenn Sie die gesamte Menge in das Fahrzeug füllen bzw. aus dem Fahrzeug laden müssen'
         help: Zu liefernde Mengen. Im Falle von Füllen / Entleeren entscheidet die Optimierungsfunktion selbst über die Mengen. Wenn Sie einen Wert angeben, wird er als Mindestwert zum Füllen / Entleeren verwendet.
-      take_over_default: Standard
-      take_over_help: Wenn das Feld leer ist, verwenden Sie den Standardwert
+      duration_default: Standard
+      duration_help: Wenn das Feld leer ist, verwenden Sie den Standardwert
       open_close1: Zeitfenster 1
       open_close2: Zeitfenster 2
       priority: Priorität

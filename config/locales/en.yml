@@ -478,8 +478,8 @@ en:
       visit:
         ref: Reference
         ref_small: Ref.
-        take_over: Visit duration
-        take_over_small: Duration
+        duration: Visit duration
+        duration_small: Duration
         open1: Time window 1 open
         open1_small: Open 1
         close1: Time window 1 close
@@ -500,8 +500,8 @@ en:
       visits:
         ref: Reference
         ref_small: Ref.
-        take_over: Visit duration
-        take_over_small: Duration
+        duration: Visit duration
+        duration_small: Duration
         open1: Time window 1 open
         open1_small: Open 1
         close1: Time window 1 close
@@ -1115,8 +1115,8 @@ en:
       geocoding_level: geocoding level
       geocoding_level_desc: level of precision reached when converting the destination's
         street address into geographic coordinates, expressed via human friendly levels.
-      take_over: visit duration
-      take_over_desc: visit duration
+      duration: visit duration
+      duration_desc: visit duration
       quantity: quantity
       quantity_desc: number of units to deliver.
       quantity_operation: operation
@@ -2237,8 +2237,8 @@ en:
         help: Quantities to be delivered. In case of fill / empty, optimization engine will
           decide itself quantities, if you specify a value it will be used as a minimum
           to fill / empty.
-      take_over_default: default
-      take_over_help: If empty, use the default value, format hh:mm:ss
+      duration_default: default
+      duration_help: If empty, use the default value, format hh:mm:ss
       open_close1: Time window 1
       open_close2: Time window 2
       priority: Priority
