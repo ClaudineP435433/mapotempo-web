@@ -382,8 +382,6 @@ GEM
       actionmailer (>= 3.2)
       letter_opener (~> 1.0)
       railties (>= 3.2)
-    libnotify (0.9.4)
-      ffi (>= 1.0.11)
     libv8 (3.16.14.19)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -751,7 +749,6 @@ DEPENDENCIES
   leaflet-responsive-popup-rails!
   leaflet_numbered_markers-rails!
   letter_opener_web
-  libnotify
   lograge
   macaddr
   mapotempo_web_by_time_distance!
@@ -812,4 +809,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.17.1
+   2.0.1

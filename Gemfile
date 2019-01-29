@@ -42,7 +42,7 @@ group :development do
       gem 'guard-rake'
       gem 'guard-delayed'
       gem 'guard-process'
-      gem 'libnotify'
+      #gem 'libnotify'
     end
   end
 end
