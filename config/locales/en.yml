@@ -148,7 +148,7 @@ en:
         max_zonings: Max zonings
         max_destinations: Max destinations
         max_vehicle_usage_sets: Max vehicles base settings
-        take_over: Visit duration
+        visit_duration: Visit duration
         default_country: Default country
         with_state: Add State field in addresses
         optimization_max_split_size: Optimization split size
@@ -829,7 +829,7 @@ en:
         respect the limitations and override limitations only if it's the only way.
       vehicle_router_unauthorized: "At least one vehicle have an unauthorized router for this profile : <strong>%{profile}</strong>"
       user_layer_unauthorized: "At least one user have an unauthorized layer for this profile : <strong>%{profile}</strong>"
-      take_over_help: Average time per account
+      visit_duration_help: Average time per account
       max_plannings_default: '%{n} (default value)'
       max_plannings_help: Maximum number of allowed plans into the account.
       max_zonings_default: '%{n} (default value)'

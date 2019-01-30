@@ -27,7 +27,7 @@ $destinations_str = "
       \"close1\": \"12:00\",
       \"open2\": \"14:00\",
       \"close2\": \"18:00\",
-      \"take_over\": \"00:10:00\"
+      \"duration\": \"00:10:00\"
     }
   ]
 }]
@@ -63,7 +63,7 @@ $destinations_str_with_route = "
       \"close1\": \"12:00\",
       \"open2\": \"14:00\",
       \"close2\": \"18:00\",
-      \"take_over\": \"00:10:00\",
+      \"duration\": \"00:10:00\",
       \"route\": \"string\",
       \"active\": true
     }

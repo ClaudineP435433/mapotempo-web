@@ -201,7 +201,7 @@ $(document).on('ready page:load', function() {
             value: value
           };
         });
-        result.duration = result.duration + stop.take_over;
+        result.duration = result.duration + stop.duration;
       });
 
       result.quantities.forEach(function(quantity) {

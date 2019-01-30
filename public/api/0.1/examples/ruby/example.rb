@@ -55,7 +55,7 @@ def destination_hash index
       close1: "12:00",
       open2: "14:00",
       close2: "18:00",
-      take_over: "00:10:00"
+      duration: "00:10:00"
     }]
   }
 end
@@ -82,7 +82,7 @@ def destination_hash_with_route index
       close1: "12:00",
       open2: "14:00",
       close2: "18:00",
-      take_over: "00:10:00",
+      duration: "00:10:00",
       route: "string",
       active: true
     }]

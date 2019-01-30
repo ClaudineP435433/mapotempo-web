@@ -133,7 +133,7 @@ he:
         enable_external_callback: הפעל כתובת אתר
         end_subscription: סיים מנוי
         max_vehicles: מקסימום רכבים
-        take_over: משך השהייה
+        visit_duration: משך השהייה
         name: שם
         destinations: יעדים
         orange_user: Orange משתמש
@@ -669,7 +669,7 @@ he:
       router_options_height_range: ערכי גובה בין%{from} לבין%{to} מטרים
       router_options_width_range: ערכי רחב בין%{from} לבין%{to} מטרים
       router_options_length_range: ערכי אורך בין%{from} לבין%{to} מטרים
-      take_over_help: זמן ממוצע לחשבון
+      visit_duration_help: זמן ממוצע לחשבון
       tomtom: TomTom WEBFLEET
       tomtom_help: מאפשר לשלוח תוכניות TomTom Pro עם WEBFLEET.
       teksat: איתורן

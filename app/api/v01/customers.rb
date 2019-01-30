@@ -40,7 +40,7 @@ class V01::Customers < Grape::API
           :description,
           :end_subscription,
           :test,
-          :take_over,
+          :visit_duration,
           :default_country,
           :with_state,
           :max_vehicles,
@@ -82,7 +82,7 @@ class V01::Customers < Grape::API
           devices: permit_recursive_params(p[:devices]))
       else
         p.permit(
-          :take_over,
+          :visit_duration,
           :default_country,
           :optimization_max_split_size,
           :optimization_cluster_size,
@@ -191,7 +191,7 @@ class V01::Customers < Grape::API
         :job_store_geocoding_id,
         :job_optimizer_id,
         :router_options,
-        :take_over,
+        :visit_duration,
         :devices
       )
 
@@ -213,7 +213,7 @@ class V01::Customers < Grape::API
         optional :strict_restriction, type: Boolean
       end
 
-      optional :take_over, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
+      optional :visit_duration, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
     end
     put ':id' do
       if @current_user.admin?
@@ -242,7 +242,7 @@ class V01::Customers < Grape::API
         :job_store_geocoding_id,
         :job_optimizer_id,
         :router_options,
-        :take_over
+        :visit_duration
       ).deep_merge(
         name: { required: true },
         default_country: { required: true },
@@ -265,7 +265,7 @@ class V01::Customers < Grape::API
         optional :max_walk_distance, type: Float
       end
 
-      optional :take_over, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
+      optional :visit_duration, type: Integer, documentation: { type: 'string', desc: 'Schedule time (HH:MM)' }, coerce_with: ->(value) { ScheduleType.new.type_cast(value) }
     end
     post do
       if @current_user.admin?

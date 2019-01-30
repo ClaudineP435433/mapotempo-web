@@ -135,7 +135,7 @@ es:
         enable_external_callback: Activar URL de recordatorio
         end_subscription: Fin de suscripción
         max_vehicles: Paquete
-        take_over: Duración de visita de los clientes
+        visit_duration: Duración de visita de los clientes
         destinations: Clientes
         router: Calculador de itinerario
         router_id: Calculador de itinerario
@@ -713,7 +713,7 @@ es:
       router_options_strict_restriction: Si no marcado el calculador intentara respetar
         las prohibiciones a lo mas cerca y pasara por encima la prohibición solo si
         no puede hacerlo de otra manera.
-      take_over_help: Duración de visita media por cliente
+      visit_duration_help: Duración de visita media por cliente
       optimization_time_help: La optimización se para por defecto automáticamente.
         Sin embargo puede precisar aquí un valor limite, por vehículo, que no se debe
         sobrepasar.

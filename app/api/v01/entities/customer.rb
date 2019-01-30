@@ -33,7 +33,7 @@ class V01::Entities::Customer < Grape::Entity
   expose(:ref, documentation: { type: String, desc: EDIT_ONLY_ADMIN })
   expose(:name, documentation: { type: String, desc: EDIT_ONLY_ADMIN })
   # expose(:test, documentation: { type: 'Boolean', desc: EDIT_ONLY_ADMIN })
-  expose(:take_over, documentation: { type: DateTime, desc: 'Visit duration' }) { |m| m.take_over_time_with_seconds }
+  expose(:visit_duration, documentation: { type: DateTime, desc: 'Visit duration' }) { |m| m.visit_duration_time_with_seconds }
   expose(:default_country, documentation: { type: String })
   expose(:profile_id, documentation: { type: Integer, desc: EDIT_ONLY_ADMIN })
   expose(:router_id, documentation: { type: Integer })

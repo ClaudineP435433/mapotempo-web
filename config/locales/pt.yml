@@ -135,7 +135,7 @@
         'enable_external_callback': 'Ativar URL de chamada'
         'end_subscription': 'Fim de subscrição'
         'max_vehicles': 'Nùmero de veículos'
-        'take_over': 'Duração da visita'
+        'visit_duration': 'Duração da visita'
         'name': 'Nome'
         'destinations': 'Pontos'
         'router': 'Calculador de itinerário'
@@ -823,7 +823,7 @@
       'router_options_truck_restriction_penalty': 'Se não selecionado, o calculador
         tentará respeitar estritamente as limitações, ignorando estas caso não exista
         outra forma.'
-      'duration_help': 'Duração média da visita por cliente'
+      'visit_duration_help': 'Duração média da visita por cliente'
       'optimization_cluster_size_default': '%{n} (valor por defeito)'
       'optimization_cluster_size_help': 'Valor em segundos entre pontos a agrupar
         antes da otimização. Um valor demasiado alto degradará a qualidade da otimização

@@ -135,7 +135,7 @@ class RouteTest < ActiveSupport::TestCase
       end
     }
     route.vehicle_usage.open = 0
-    route.planning.customer.take_over = 0
+    route.planning.customer.visit_duration = 0
     route.planning.customer.save!
 
     assert_equal 0, route.sum_out_of_window

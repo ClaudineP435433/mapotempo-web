@@ -144,7 +144,7 @@ de:
         max_zonings: Maximale Zoneneinteilungen
         max_destinations: Maximale Zielorte
         max_vehicle_usage_sets: Maximale Grundeinstellungen der Fahrzeuge
-        take_over: Verweildauer
+        visit_duration: Verweildauer
         default_country: Standardland
         with_state: Statusfeld in Adressen hinzufügen
         optimization_max_split_size: Splitgröße für Optimierung
@@ -802,7 +802,7 @@ de:
       router_options_approach_help: An- und Abreise mit Kontrollpunkt in der aktuellen Verkehrsrichtung
       router_options_snap_range: Maximale Entfernung bis zum Halt an einer Kreuzung, ansonsten Halt am Auslieferungsort.
       router_options_strict_restriction: Wenn nicht angekreuzt, wird der Router versuchen, die Einschränkungen streng einzuhalten und Einschränkungen nur dann aufzuheben, falls dies der einzige Weg ist.
-      take_over_help: Durchschnittliche Zeit pro Benutzerkonto
+      visit_duration_help: Durchschnittliche Zeit pro Benutzerkonto
       max_plannings_default: '%{n} (Standardwert)'
       max_plannings_help: Maximale Anzahl der zulässigen Pläne auf dem Benutzerkonto.
       max_zonings_default: '%{n} (Standardwert)'

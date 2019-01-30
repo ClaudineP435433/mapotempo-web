@@ -110,7 +110,7 @@ class CustomersController < ApplicationController
         :description,
         :end_subscription,
         :test,
-        :take_over,
+        :visit_duration,
         :default_country,
         :with_state,
         :max_vehicles,
@@ -176,7 +176,7 @@ class CustomersController < ApplicationController
       return parameters
     else
       allowed_params = [
-        :take_over,
+        :visit_duration,
         :default_country,
         :with_state,
         :print_planning_annotating,

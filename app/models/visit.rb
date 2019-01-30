@@ -122,11 +122,11 @@ class Visit < ApplicationRecord
   end
 
   def default_duration
-    duration || destination.customer.take_over
+    duration || destination.customer.visit_duration
   end
 
   def default_duration_time_with_seconds
-    duration_time_with_seconds || destination.customer.take_over_time_with_seconds
+    duration_time_with_seconds || destination.customer.visit_duration_time_with_seconds
   end
 
   def default_quantities
