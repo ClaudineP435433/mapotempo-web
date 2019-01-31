@@ -41,6 +41,7 @@ class V01::Customers < Grape::API
           :end_subscription,
           :test,
           :visit_duration,
+          :take_over,
           :default_country,
           :with_state,
           :max_vehicles,
@@ -83,6 +84,7 @@ class V01::Customers < Grape::API
       else
         p.permit(
           :visit_duration,
+          :take_over,
           :default_country,
           :optimization_max_split_size,
           :optimization_cluster_size,
@@ -192,6 +194,7 @@ class V01::Customers < Grape::API
         :job_optimizer_id,
         :router_options,
         :visit_duration,
+        :take_over,
         :devices
       )
 
@@ -242,7 +245,8 @@ class V01::Customers < Grape::API
         :job_store_geocoding_id,
         :job_optimizer_id,
         :router_options,
-        :visit_duration
+        :visit_duration,
+        :take_over
       ).deep_merge(
         name: { required: true },
         default_country: { required: true },

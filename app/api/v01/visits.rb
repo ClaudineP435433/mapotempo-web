@@ -29,9 +29,10 @@ class V01::Visits < Grape::API
         p[:quantities] = Hash[p[:quantities].map{ |q| [q[:deliverable_unit_id].to_s, q[:quantity]] }]
       end
 
-      # Deals with deprecated open and close
+      # Deals with deprecated open, take_over and close
       p[:open1] = p.delete(:open) if !p[:open1] && p.key?(:open)
       p[:close1] = p.delete(:close) if !p[:close1] && p.key?(:close)
+      p[:duration] = p.delete(:take_over) if !p[:duration] && p.key?(:take_over)
       # Deals with deprecated quantity
       unless p[:quantities]
         p[:quantities] = {current_customer.deliverable_units[0].id.to_s => p.delete(:quantity)} if p[:quantity] && current_customer.deliverable_units.size > 0
@@ -43,7 +44,7 @@ class V01::Visits < Grape::API
       end
 
       deliverable_unit_ids = current_customer.deliverable_units.map{ |du| du.id.to_s }
-      p.permit(:ref, :duration, :open1, :close1, :open2, :close2, :priority, tag_ids: [], quantities: deliverable_unit_ids, quantities_operations: deliverable_unit_ids)
+      p.permit(:ref, :duration, :take_over, :open1, :close1, :open2, :close2, :priority, tag_ids: [], quantities: deliverable_unit_ids, quantities_operations: deliverable_unit_ids)
     end
 
     ID_DESC = 'Id or the ref field value, then use "ref:[value]".'.freeze
