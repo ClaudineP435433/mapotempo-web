@@ -20,22 +20,22 @@ module ActiveRecord
           end
 
           if @logger && pk && !sequence
-            @logger.warn "#{table} has primary key #{pk} with no default sequence"
+            @logger.warn "#{ table } has primary key #{pk} with no default sequence"
           end
 
           if pk && sequence
             quoted_sequence = quote_table_name(sequence)
-            max_pk = select_value("SELECT MAX(#{quote_column_name pk}) FROM #{quote_table_name(table)}")
+            max_pk = select_value("SELECT MAX(#{ quote_column_name pk }) FROM #{ quote_table_name(table) }")
             if max_pk.nil?
               if postgresql_version >= 100000
-                minvalue = select_value("SELECT seqmin FROM pg_sequence WHERE seqrelid = #{quote(quoted_sequence)}::regclass")
+                minvalue = select_value("SELECT seqmin FROM pg_sequence WHERE seqrelid = #{ quote(quoted_sequence) }::regclass")
               else
-                minvalue = select_value("SELECT min_value FROM #{quoted_sequence}")
+                minvalue = select_value("SELECT min_value FROM #{ quoted_sequence }")
               end
             end
 
             select_value <<-end_sql, 'SCHEMA'
-              SELECT setval(#{quote(quoted_sequence)}, #{max_pk ? max_pk : minvalue}, #{max_pk ? true : false})
+              SELECT setval(#{ quote(quoted_sequence) }, #{ max_pk ? max_pk : minvalue }, #{ max_pk ? true : false })
             end_sql
           end
         end
